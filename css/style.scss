@@ -3,23 +3,27 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 ul {
     list-style-type: none;
 }
+
 section {
     display: flex;
     justify-content: center;
-     min-height: 100vh;
+    min-height: 100vh;
 }
 
 .wrapper {
     width: 1024px;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 .header {
@@ -28,59 +32,77 @@ section {
     align-items: center;
     justify-content: center;
     background-color: #f0f2f4;
-    ul {
-        display: flex;
-        justify-content: flex-end;
-        li {
-            a {
-                padding-right: 40px;
-            }
-            // padding-right: 40px;
-            i {
-                margin-right: 10px;
+    margin: 0 auto;
+
+    .links {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                a {
+                    padding-right: 40px;
+                }
+
+                // padding-right: 40px;
+                i {
+                    margin-right: 10px;
+                }
             }
         }
+
+
     }
     .menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 50px;
+
         .logo {
             display: flex;
             align-items: center;
+
             &__text {
                 display: flex;
                 flex-direction: column;
+
                 p {
                     margin: 0;
                 }
+
                 // justify-content: flex-start;
                 &_regular {
                     font-size: 1.2rem;
                 }
+
                 &_bold {
                     font-size: 3.7rem;
                     font-weight: bold;
                 }
             }
+
             i {
                 font-size: 5.5rem;
                 color: #dd2a24;
             }
         }
+
         nav {
             ul {
                 display: flex;
                 justify-content: flex-end;
+
                 li {
                     display: inline-block;
                     font-size: 1.5rem;
+
                     a {
                         display: inline-block;
                         padding-right: 40px;
                         //    display: flex;align-items: center;
                     }
+
                     i {
                         margin: 0px 5px;
                         font-size: 0.5rem;
@@ -112,9 +134,11 @@ section {
             font-size: 4.8rem;
             margin-bottom: -40px;
         }
+
         p {
             font-size: 3rem;
         }
+
         a {
             font-size: 30px;
             text-transform: uppercase;
@@ -122,26 +146,35 @@ section {
     }
 }
 
+.aboutUs__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
 .aboutUs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 
     &__heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // margin-bottom: 50px;
 
-        h2{
+        h2 {
             margin: 0;
             font-size: 3.6rem;
         }
 
-        p{
+        p {
             margin: 0;
             font-size: 2rem;
         }
@@ -153,39 +186,78 @@ section {
         align-items: center;
 
     }
-    &__service{
+
+    &__service {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 235px;
-        
-        h3{
+
+        h3 {
             font-size: 1.3rem;
         }
-        
-        p{
+
+        p {
             font-size: 1rem;
             text-align: center;
         }
     }
 }
 
-.revers{
+.revers {
     flex-direction: row-reverse;
 }
-.ourApproch{
+
+.ourApproch {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: #f3f3f3;
 
-    &__approch{
+
+
+    &__approch {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        position: relative;
+
+        .approch__description {
+            padding: 0 50px;
+
+            h3 {
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.4rem;
+                text-align: justify;
+            }
+        }
+
+        .step {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid white;
+            color: white;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 330px;
+            text-align: center;
+            // vertical-align: middle;
+        }
+
+        .even {
+            left: 665px;
+        }
     }
 }
+
+
 
 .button {
     // display: inline-block;
@@ -201,12 +273,15 @@ section {
         width: 900px;
     }
 }
+
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
     .wrapper {
         width: 750px;
     }
-} // Small devices (landscape phones, less than 768px)
+}
+
+// Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     .wrapper {
         width: 450px;
@@ -219,15 +294,54 @@ section {
     }
 
     .aboutUs {
-    
+
+        &__heading {
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
         &__services {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-    
+
         }
-       
+
+    }
+
+    .ourApproch {
+        &__approch {
+            flex-direction: column;
+
+            img {
+                width: 300px;
+            }
+
+            .approch__description {
+                padding: 0 30px;
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    text-align: justify;
+                }
+            }
+
+            .step {
+                display: none;
+            }
+
+        }
     }
 
 }

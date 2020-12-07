@@ -27,7 +27,6 @@ section {
 
 .wrapper {
   width: 1024px;
-  border: 1px solid black;
 }
 
 .header {
@@ -45,9 +44,10 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #f0f2f4;
+  margin: 0 auto;
 }
 
-.header ul {
+.header .links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,11 +56,11 @@ section {
           justify-content: flex-end;
 }
 
-.header ul li a {
+.header .links ul li a {
   padding-right: 40px;
 }
 
-.header ul li i {
+.header .links ul li i {
   margin-right: 10px;
 }
 
@@ -187,22 +187,6 @@ section {
   text-transform: uppercase;
 }
 
-.aboutUs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .aboutUs__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +202,22 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+}
+
+.aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aboutUs__heading h2 {
@@ -299,6 +299,38 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.ourApproch__approch .approch__description {
+  padding: 0 50px;
+}
+
+.ourApproch__approch .approch__description h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.ourApproch__approch .approch__description p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.ourApproch__approch .step {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 330px;
+  text-align: center;
+}
+
+.ourApproch__approch .even {
+  left: 665px;
 }
 
 .button {
@@ -329,6 +361,12 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .aboutUs__heading h2 {
+    text-align: center;
+  }
+  .aboutUs__heading p {
+    text-align: center;
+  }
   .aboutUs__services {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -343,6 +381,29 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .ourApproch__approch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ourApproch__approch img {
+    width: 300px;
+  }
+  .ourApproch__approch .approch__description {
+    padding: 0 30px;
+  }
+  .ourApproch__approch .approch__description h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .ourApproch__approch .approch__description p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .ourApproch__approch .step {
+    display: none;
   }
 }
 

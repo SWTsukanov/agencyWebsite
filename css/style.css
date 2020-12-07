@@ -22,7 +22,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .wrapper {
@@ -263,6 +263,13 @@ section {
 .aboutUs__service p {
   font-size: 1rem;
   text-align: center;
+}
+
+.revers {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .ourApproch {
